@@ -1,0 +1,150 @@
+:root{
+    --dark: #353941;
+    --black: #26282B;
+    --dark-blue: #5F85DB;
+    --light-blue: #90B8F8;
+    --grey: #A5AAB6;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--dark);
+}
+
+#log {
+    display: block;
+    height: 600px;
+    width: 100%;
+    resize: none;
+    padding: 0;
+    background-color: var(--black);
+    border: 2px dimgrey;
+}
+
+#input {
+    display: block;
+    border-width: 1px 1px 1px 1px;
+    bottom: 0;
+    width: 100%;
+}
+#text-area{
+    width: 100%;
+}
+.top-nav{
+    /*overflow: hidden;*/
+    background-color: var(--grey);
+    /*position: relative;*/
+    /*top: 0;*/
+    width: 100%;
+    height: 15%;
+    /*border-bottom: 1px solid black;*/
+
+}
+.top-nav-text{
+    font-size: 30px;
+}
+.tab-content{
+    display: none;
+}
+::placeholder{
+    color: coral;
+    opacity: 0.7;
+}
+.textarea{
+    color: coral;
+}
+.text{
+    color: coral;
+}
+.room-button{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #08ffa4;
+    background-color: var(--dark-blue);
+    margin-top: auto;
+    &:hover{
+        color:white;
+        background: darkblue;
+    }
+}
+#bars{
+    width: 75px;
+    justify-self: center;
+    margin-bottom: 1%;
+}
+.room-button:hover{
+    background-color: cadetblue;
+}
+#main{
+    transition: margin-left .5s;
+}
+#room-tab{
+    float: left;
+    width: 0;
+    height: 100%;
+    border: 200px dimgrey;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background: rgba(41, 59, 59, 0.72);
+}
+#room-title{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5px;
+    color: #c9ceda;
+}
+#room-text{
+    top:0;
+    margin: 1px;
+}
+#create-button{
+    display: inline;
+    width: 70px;
+    text-align: center;
+}
+#x-button{
+    justify-content: right;
+    width: 100%;
+}
+
+.name-text{
+    font-family: Georgia, serif;
+    color: wheat;
+}
+
+.input{
+    width: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    display: block;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!link rel="manifest" href="site.webmanifest">
+  <!link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div id="room-tab">
+  <div id="x-button">
+    <button class="room-button" onclick="closeRoomTab()"><img src="img/x_icon.webp" width="16" height="16" ></button>
+  </div>
+  <div id ="room-title">
+    <h1 id="room-text">Rooms:</h1>
+    <button class="room-button" onclick="getRoomCodes()"><i class="fa fa-refresh"></i></button>
+    <button class="room-button" id="create-button" onclick="newRoom()"><i class="fa fa-plus"></i> create</button>
+  </div>
+  <ul id="room-list">
+    <li><button>SOME</button></li>
+  </ul>
+</div>
+
+<div id="main">
+  <div class="top-nav">
+    <a class="top-nav-text">CSCI 2020U CHAT ROOMS</a>
+    <a href="about.html">About us</a>
+  </div>
+
+  <div>
+    <button onclick="openRoomTab()" class="room-button" id="bars"><i class="fa fa-bars"></i>Rooms</button>
+    <input id="room-code-input" type="text"/>
+    <button id="room-btn" onclick="enterInput()">Enter Room Code</button>
+  </div>
+
+
+  <div id="text-area">
+    <textarea title="Chat Log" class="text" id="log" readonly placeholder="Hello, select or join a chat room"></textarea>
+    <div id="message-area">
+      <input title="Chat Input" id="input" type="text" />
+      <button id="send-button">Send</button>
+      <div class="dropdown">
+        <button id="emoji-button"><i class="fa fa-smile-o"></i></button>
+        <div id="emoji-dropdown" class="dropdown-content">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!script src="js/vendor/modernizr-3.11.2.min.js"><!/script>
+<!script src="js/plugins.js"><!/script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+

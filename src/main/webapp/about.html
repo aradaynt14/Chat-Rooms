@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div class = "tabs">
+        <button onclick="changeAboutTab('details')" >Details</button>
+        <button onclick="changeAboutTab('people')" id="defaultOpen">People</button>
+    </div>
+
+    <div id="people" class="tab-content">
+        <dl>
+            <dt class="name-text">Aran Ayntabli - Contributions: </dt>
+            <dt class="name-text">Hobbies - Competitive fighting game player</dt>
+            <dt class="name-text">Alan Zheng - Contributions:</dt>
+            <dt class="name-text">Hobbies - Basketball</dt>
+            <dt class="name-text">Ashton Skinner-Dooley - Contributions:</dt>
+            <dt class="name-text">Hobbies - </dt>
+            <dt class="name-text">Karankumar Patel - Contributions:</dt>
+            <dt class="name-text">Hobbies - Wrestling, Basketball, Chess</dt>
+        </dl>
+    </div>
+    <div id="details" class="tab-content">
+        <p class="name-text">
+            This chat application utilizes websockets to establish a two-way session
+            between the client and server for real-time updates, particularly for message events.
+
+        </p>
+    </div>
+</body>
+</html>
+
+<script src="js/about.js"></script>

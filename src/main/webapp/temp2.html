@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3AK Lounge</title>
+<link rel="stylesheet" type="text/css" href="css/GameRoomStyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/game.js"></script>
+</style>
+</head>
+<body>
+
+<button id="back-to-menu" onclick="window.location.href='menu.html';">Back to Menu</button>
+<button id="flip-coin" onclick="flipCoin()">Flip a Coin</button>
+<button id="roll-dice" onclick="rollDice()">Roll a Dice</button>
+
+<div id="room-tab">
+  <div id="x-button">
+    <button class="room-button" onclick="closeRoomTab()">X</button>
+  </div>
+  <div id ="room-title">
+    <h1 id="room-text">Rooms:</h1>
+    <button class="room-button" onclick="getRoomCodes()"><i class="fa fa-refresh"></i></button>
+    <button class="room-button" id="create-button" onclick="newRoom()"><i class="fa fa-plus"></i> </button>
+  </div>
+  <ul id="room-list">
+    <li><button>SOME</button></li>
+  </ul>
+</div>
+
+<div id="main">
+  <div class="top-nav">
+    <a class="top-nav-text">3AK Lounge</a>
+  </div>
+
+  <div>
+    <button onclick="openRoomTab()" class="room-button" id="bars"><i class="fa fa-bars"></i></button>
+    <input id="room-code-input" type="text"/>
+    <button id="room-btn" onclick="enterInput()">Enter Room Code</button>
+    <a class="text">Current room:</a>
+    <a class="text" id=current-room"></a>
+  </div>
+
+
+  
+<div class="container">
+
+  <div id = "text-area">
+    <textarea title="Chat Log" class="text" id="log" readonly placeholder="Hello, select or join a chat room."></textarea>
+    <input title="Chat Input" id="input" type="text"/>
+    <button id="send-button">Send</button>
+    <button id="file-send-button">Attatch File</button>
+
+      <button id="emoji-button"><i class="fa fa-smile-o"></i></button>
+      <div id="emoji-dropdown" class="dropdown-content">
+
+      </div>
+    
+    <button id="tts-button">Text to Speech</button>
+
+
+
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+
